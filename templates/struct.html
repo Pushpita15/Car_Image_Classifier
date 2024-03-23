@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <div class="chat-container">
+        <h2>Next-Gen Innovations</h2>
+        <div class="chat-output" id="chat-output"></div>
+        <div class="chat-input">
+           
+        
+            <form id="image-form" enctype="multipart/form-data">
+                <input type="file" id="form-image-upload" name="image" accept="image/*">
+                <button type="submit">Send Image</button>
+            </form>
+        
+
+        </div>
+        
+
+        
+    </div>
+    <div id="predictions-output"></div>
+    <script src="{{ url_for('static', filename='function.js') }}"></script>
+
+    
+</body>
+</html>
+
+
